@@ -1,42 +1,14 @@
 # Jobs With Dogs
 
 A simple jobsboard to find jobs at the best dog-friendly tech companies.
-
 [image]
 
 ---------
 
-## To Do (in-progress)
-
-- [x] Add country select
-- [ ] Map country to emoji
-- [ ] Back-end voting function
-- [x] Sort by recent
-- [ ] Sort by popular
-- [ ] Filter by location
-- [ ] Convert UTC with moment.js
-
-
-### To try it out:
-
-```
-git clone https://github.com/ericpuigmarti/jobsboard.git
-cd jobsboard && bundle install
-rails server
-```
-Then, just point your browser at http://localhost:3000.
-
-### Contribute
-
-Actively welcome pull requests to contribute.
-
-<!-- 
-### Things you may want to cover:
+Things you may want to cover:
 
 * Ruby version 
-```
-ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-darwin16]
-```
+`ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-darwin16]`
 
 * System dependencies
 
@@ -53,4 +25,3 @@ ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-darwin16]
 * Deployment instructions
 
 * ...
--->
