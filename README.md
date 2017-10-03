@@ -5,6 +5,16 @@ A simple jobsboard to find jobs at the best dog-friendly tech companies.
 
 ---------
 
+## To Do
+
+- [x] Add country select
+- [ ] Map country to emoji
+- [ ] Back-end voting function
+- [x] Sort by recent
+- [ ] Sort by popular
+- [ ] Filter by location
+
+
 Things you may want to cover:
 
 * Ruby version 
