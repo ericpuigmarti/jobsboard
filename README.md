@@ -1,11 +1,12 @@
 # Jobs With Dogs
 
 A simple jobsboard to find jobs at the best dog-friendly tech companies.
+
 [image]
 
 ---------
 
-## To Do
+## To Do (in-progress)
 
 - [x] Add country select
 - [ ] Map country to emoji
@@ -14,11 +15,16 @@ A simple jobsboard to find jobs at the best dog-friendly tech companies.
 - [ ] Sort by popular
 - [ ] Filter by location
 
-## Run server
+
+### To try it out:
+
 ```
+$ git clone https://github.com/ericpuigmarti/jobsboard.git
+$ cd jobsboard && npm install
 $ rails server
 ```
-This should open and run the app on `http://localhost:3000/`
+Then, just point your browser at http://localhost:3000.
+
 
 ### Things you may want to cover:
 
