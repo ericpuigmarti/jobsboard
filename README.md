@@ -14,11 +14,18 @@ A simple jobsboard to find jobs at the best dog-friendly tech companies.
 - [ ] Sort by popular
 - [ ] Filter by location
 
+## Run server
+```
+$ rails server
+```
+This should open and run the app on `http://localhost:3000/`
 
 ### Things you may want to cover:
 
 * Ruby version 
-`ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-darwin16]`
+```
+ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-darwin16]
+```
 
 * System dependencies
 
