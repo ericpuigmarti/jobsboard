@@ -15,7 +15,7 @@ A simple jobsboard to find jobs at the best dog-friendly tech companies.
 - [ ] Filter by location
 
 
-Things you may want to cover:
+### Things you may want to cover:
 
 * Ruby version 
 `ruby 2.4.0p0 (2016-12-24 revision 57164) [x86_64-darwin16]`
