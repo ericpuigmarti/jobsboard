@@ -62,4 +62,5 @@ gem 'country_select'
 # Moment.js 
 gem 'momentjs-rails'
 # Voting
-# gem 'acts_as_votable', '~> 0.10.0'
+gem 'acts_as_votable', '~> 0.10.0'
+
