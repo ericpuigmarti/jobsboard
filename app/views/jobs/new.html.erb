@@ -1,0 +1,8 @@
+<%= simple_form_for @job do |form| %>
+	<h2 class="modal-title">Post a new job</h2>
+	<%= form.input :title, label: "Job title" %>
+	<%= form.input :company, label: "Company" %>
+	<%= form.input :city, label: "City" %>
+	<%= form.input :url, label: "Link to job post" %>
+	<%= form.button :submit %>
+<% end %>

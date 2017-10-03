@@ -1,0 +1,62 @@
+<!-- Intro -->
+<!-- <h1>TechJobsWithDogs</h1> -->
+<header class="container intro">
+	<section id="header" class="header no-user">
+		<div class="header-container">
+			<div class="logo">
+				<img src="/images/doggo.png" style="display: none;" />
+				<span class="site-title"><a href="/">jobs.with.dogs</a></span></div><!-- ".logo" -->
+			<div class="menu1"><div class="post-button"><a class=" primary post-button-link" href="/login"><button class="primary"><%= link_to "Add a job", new_job_path %></button></a></div></div><!-- Add new job -->
+		</div>
+	</section>
+</header>
+
+
+	<div class="intro-container col-md-8">
+		<!-- Site desc. -->
+		<div class="col-6 col-sm-12" id="intro"><span id="site-desc">Find jobs at the best dog-friendly tech companies <!-- 🐶 --></span></div>
+		<!-- Dog image -->
+		<div class="col-4 col-sm-12 hero-container"><img id="img-hero" src="https://cdn.dribbble.com/users/31752/screenshots/3785716/space.png"> </div>
+		<!-- <div class="col-4 col-sm-12 hero-container"><img id="img-hero" src="http://funemployed.life/assets/images/Girl.png"> </div> -->
+		<!-- <img src="http://via.placeholder.com/640x400"> -->
+	</div>
+
+	<!-- Jobs List -->
+	<div class="content-container">	
+		<!-- Filter Jobs -->
+		<div class="filter-container">
+			<div class="filter">
+				<!-- <p>Job filters will go here...</p> -->
+				<a href="" class="active-link filter-link" style="border-right: 1px solid #e8e8e8;">Popular</a>
+				<a href="#" class="filter-link">Newest</a>
+			</div>
+		</div>
+		<!-- /end filter jobs -->
+		<div class="post-container">
+			<!-- Post template -->
+			<% @jobs.each do |job| %>
+			  <div class="job">
+			  	<div class="post-actions">
+			  		<div class="post-upvotes">
+			  			<div class="post-upvote post-bubble" data-id="56327"></div>
+			  			<div class="post-ui-count upvote-count" data-id="56327">1</div>
+			  		</div>
+			  	</div><!-- /end post-actions -->
+			  	<div class="post-info">	
+				    <h3 class="post-title purple"><span class="post-title-wrapper"><%= link_to job.title, job.url, target: '_blank' %><div class="showme">↗</div></span></h3>
+				    <div class="post-meta">
+				    	<div class="company"><%= job.company %></div>
+				    	<div class="city"><span class="flag-icon">🇺🇸</span>  <%= job.city %> <!--New York--></div>
+				    	<div class="time-stamp"><span class="post-time-diff">  <%= job.updated_at %> <!-- 2 hours ago --></div>
+			    	</div>
+		    	</div> <!-- /end post-info -->
+			  </div>
+			<% end %> <!-- /end template -->
+		</div> <!-- /end post-container -->
+		<!-- Pagination -->
+		<p><%= paginate @jobs %></p>
+	<!-- /end main div -->
+	</div>
+<footer>
+	<span id="creds">© 2017 — made with ❤️ by <a href="http://ericpuigmarti.com/" target="_blank">Eric Puigmarti</a>.</span>
+</footer>
