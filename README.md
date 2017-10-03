@@ -14,6 +14,7 @@ A simple jobsboard to find jobs at the best dog-friendly tech companies.
 - [x] Sort by recent
 - [ ] Sort by popular
 - [ ] Filter by location
+- [ ] Convert UTC with moment.js
 
 
 ### To try it out:
@@ -25,6 +26,9 @@ rails server
 ```
 Then, just point your browser at http://localhost:3000.
 
+### Contribute
+
+Actively welcome pull requests to contribute.
 
 <!-- 
 ### Things you may want to cover:
