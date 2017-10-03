@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jobsboard</title>
+    <title>Jobs With Dogs</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= typekit 'xls2sjy' %>
   </head>
 
   <body class="<%= controller_name %>_body action_<%= action_name %>">
-    <%= yield %>
+    <% if notice %>
+      <%= notice %>
+    <% end %>
+
+  <%= yield %>
   </body>
 </html>

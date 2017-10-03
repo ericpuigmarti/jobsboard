@@ -21,5 +21,16 @@ ActiveRecord::Schema.define(version: 20171002213108) do
     t.string "city"
     t.string "country"
   end
-  
+
+  create_table "votes", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "link_id"
+    t.integer "upvote"
+    t.integer "downvote"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["link_id"], name: "index_votes_on_link_id"
+    t.index ["user_id"], name: "index_votes_on_user_id"
+  end
+
 end

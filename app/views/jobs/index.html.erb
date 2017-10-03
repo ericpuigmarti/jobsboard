@@ -18,7 +18,6 @@
 		<!-- Dog image -->
 		<div class="col-4 col-sm-12 hero-container"><img id="img-hero" src="https://cdn.dribbble.com/users/31752/screenshots/3785716/space.png"> </div>
 		<!-- <div class="col-4 col-sm-12 hero-container"><img id="img-hero" src="http://funemployed.life/assets/images/Girl.png"> </div> -->
-		<!-- <img src="http://via.placeholder.com/640x400"> -->
 	</div>
 
 	<!-- Jobs List -->
@@ -27,8 +26,9 @@
 		<div class="filter-container">
 			<div class="filter">
 				<!-- <p>Job filters will go here...</p> -->
-				<a href="" class="active-link filter-link" style="border-right: 1px solid #e8e8e8;">Popular</a>
-				<a href="#" class="filter-link">Newest</a>
+				<a href="#" class="active-link filter-link" style="border-right: 1px solid #e8e8e8;">Newest</a>
+				<a href="" class="filter-link">Popular</a>
+				
 			</div>
 		</div>
 		<!-- /end filter jobs -->
@@ -46,8 +46,9 @@
 				    <h3 class="post-title purple"><span class="post-title-wrapper"><%= link_to job.title, job.url, target: '_blank' %><div class="showme">↗</div></span></h3>
 				    <div class="post-meta">
 				    	<div class="company"><%= job.company %></div>
-				    	<div class="city"><span class="flag-icon">🇺🇸</span>  <%= job.city %> <!--New York--></div>
+				    	<div class="city"><span class="flag-icon">🇺🇸</span>  <%= job.city %>, <%= job.country %> <!--New York--></div>
 				    	<div class="time-stamp"><span class="post-time-diff">  <%= job.updated_at %> <!-- 2 hours ago --></div>
+				    	<span><a href="" class="edit-job">Edit</a></span>
 			    	</div>
 		    	</div> <!-- /end post-info -->
 			  </div>

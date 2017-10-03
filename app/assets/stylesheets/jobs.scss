@@ -30,7 +30,7 @@ body {
 }
 
 a:visited {
-    color: initial !important;
+    /*color: initial !important;*/
 }
 
 .span :before {
@@ -182,7 +182,15 @@ a.post-button-link:visited {
     line-height: 16px;
     text-transform: uppercase;
     padding: 0.5rem;
+    text-decoration: none;
+    color: #5764c6 !important;
 }
+
+.filter .active-link {
+    /*color: #5764c6 !important;*/
+    color: #222 !important;
+}
+
 .job {
 	padding: 1rem;
     margin-bottom: 2rem;
@@ -234,9 +242,9 @@ a.post-button-link:visited {
     width: calc(100% - 100px);
     display: inline-block;
 }   
-.post-title a:link {
+/*.post-title a:link {
     color: #222;
-}
+}*/
 
 .post-title:hover .showme{
     opacity: 1;
@@ -247,8 +255,6 @@ a.post-button-link:visited {
     opacity: 0;
     display: inline;
 }
-
-
 .post-title:hover > .post-title::after {
     display: none;
 }
@@ -267,6 +273,9 @@ a.post-button-link:visited {
 .post-time-diff {
 	color: #888;
 	opacity: 0.75;
+}
+.edit-job {
+    float: right;
 }
 .post-button-link button, .post-button-link span {
     font-size: 14px !important;

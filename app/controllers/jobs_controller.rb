@@ -1,10 +1,13 @@
 class JobsController < ApplicationController
-  before_action :find_job, only: [:edit, :update, :destroy]
+  before_action :find_job, only: [:show, :edit, :update, :destroy]
   def index
     # @jobs = Job.all
     # Limit to 25 with pagination
     # Order by most recent
     @jobs = Job.page(params[:page]).per(25).order('created_at DESC')
+  end
+
+  def show
   end
 
   def new
@@ -14,23 +17,25 @@ class JobsController < ApplicationController
   # Create new posting
   # Require :title, :company, :city, :url
   def create
-    @job = Job.new(params.require(:job).permit(:title, :company, :city, :url))
+    @job = Job.new(params.require(:job).permit(:title, :company, :city, :country, :url))
   	if @job.save
-	  redirect_to root_path
+	  redirect_to root_path, notice: "Saved succesfully!"
     else
-      render "new"
+      render "New"
     end
   end
 
+  # Edit jobs
+  # (Not working yet...)
   def edit
   end
 
   def update
     @job = Job.find(params[:id])
-    if @job.update(params.require(:job).permit(:title, :company, :city, :url))
-      redirect_to root_path
+    if @job.update(params.require(:job).permit(:title, :company, :city, :country, :url))
+      redirect_to @job
     else
-      render 'edit'
+      render 'Edit'
     end
   end
 
@@ -44,7 +49,7 @@ class JobsController < ApplicationController
   private
 
   def jobs_params
-    params.require(:job).permit(:title, :company, :city, :url)
+    params.require(:job).permit(:title, :company, :city, :country, :url)
   end
 
   def find_job
