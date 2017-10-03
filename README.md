@@ -19,9 +19,9 @@ A simple jobsboard to find jobs at the best dog-friendly tech companies.
 ### To try it out:
 
 ```
-$ git clone https://github.com/ericpuigmarti/jobsboard.git
-$ cd jobsboard && npm install
-$ rails server
+git clone https://github.com/ericpuigmarti/jobsboard.git
+cd jobsboard && bundle install
+rails server
 ```
 Then, just point your browser at http://localhost:3000.
 
